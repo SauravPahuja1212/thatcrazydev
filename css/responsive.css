@@ -1,0 +1,106 @@
+@media only screen and (max-width: 950px) {
+    .flag {
+        font-size: 1.5rem;
+        height: 45%;
+    }
+
+    .pin-left img, .pin-right img {
+        max-width: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .intro-2 {
+        bottom: -120%;
+    }
+    
+    .intro-2 h2 {
+        font-size: 1.8rem;
+    }
+    
+    .flag {
+        font-size: 1.2rem;
+        height: 35%;
+    }
+
+    .pin-left img, .pin-right img {
+        max-width: 18px;
+    }
+
+    .pin-left {
+        bottom: 3%;
+    }
+
+    .flag.s {
+        top: 96%;
+    }
+
+    .flag.a {
+        top: 98%;
+    }
+
+    .flag.v {
+        top: 92.5%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .intro-2 {
+        bottom: -90%;
+    }
+
+    .intro-2 h2 {
+        font-size: 1.8rem;
+    }
+
+    .flag {
+        font-size: 0.6rem;
+        height: 18%;
+    }
+
+    .pin-left img, .pin-right img {
+        max-width: 20px;
+    }
+
+    .pin-left {
+        bottom: -1%;
+    }
+
+    .pin-right {
+        bottom: 3%;
+    }
+
+    .flag.s {
+        top: 96%;
+    }
+
+    .flag.a {
+        top: 98%;
+    }
+
+    .flag.v {
+        top: 92.5%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .intro h2, .intro-2 h2 {
+        font-size: 1.3rem;
+    }
+
+    .thread {
+        border-radius: 0 0 250px 50%/66px;
+    }
+
+    .flag.s {
+        top: 96%;
+    }
+
+    .flag.a {
+        top: 98%;
+    }
+
+    .flag.v {
+        top: 92.5%;
+    }
+}

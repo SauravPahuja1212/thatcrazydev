@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+@import url(../css/flag-animation.css);
+
+* {
+  margin: 0;
+  padding :0;
+}
+
+.main-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 100vh;
+  color: #fff;
+}
+
+.scroll {
+  scroll-snap-align: start;
+}
+
+.flag-box, .about {
+  height: 100vh;
+  position: relative;
+  background-color: black;
+}
+
+.about {
+  background-color: white;
+}
+
+.flag-box img {
+  object-fit: cover;
+  width: 100%;
+  height: inherit;
+  opacity: 0.6;
+}
+
+.curve {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.curve-visible {
+  opacity: 1;
+  transition: opacity 6s;
+}
+
+.intro, .intro-2 {
+  position: absolute;
+  color: #d0dee6;
+}
+
+.intro-2 {
+  bottom: -140%;
+  text-align: center;
+}
+
+.intro h2, .intro-2 h2, .intro-2 h3, .sidenav {
+  font-size: 2.5rem;
+  font-family: 'Merienda', cursive;
+  font-weight: 400;
+}
+
+.intro-2 h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #9ba0af;
+}
+
+.thread {
+  width: 70%;
+  height: 150px;
+  border: solid 0.5px #fff;
+  border-color: transparent transparent rgb(180 204 220);
+  border-radius: 0 0 340px 50%/63px;
+  position: relative;
+}
+
+.flag {
+  height: 50%;
+  width: 11%;
+  position: absolute;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Style Script', cursive;
+  cursor: default;
+}
+
+.flag.s {
+  transform: skew(-13deg, 5deg);
+  background-color: #151e52;
+  top: 92%;
+  left: 18%;
+  color: white;
+  animation: rotate-s 3s cubic-bezier(.16,.14,.82,.73) infinite;
+}
+
+.flag.a {
+  transform: skew(-9deg, 2deg);
+  background-color: #fff;
+  top: 97%;
+  left: 31.5%;
+  color: green;
+  animation: rotate-a 4.5s cubic-bezier(.16,.14,.82,.73) infinite;
+}
+
+.flag.u-r {
+  background-color: maroon;
+  top: 98%;
+  left: 44.5%;
+  color: goldenrod;
+  animation: rotate-ur 2.8s cubic-bezier(.16,.14,.82,.73) infinite;
+}
+
+.flag.a2 {
+  transform: skew(5deg, -2deg);
+  background-color: #245b2e;
+  top: 96%;
+  right: 31.5%;
+  color: goldenrod;
+  animation: rotate-a2 3.2s cubic-bezier(.16,.14,.82,.73) infinite;;
+}
+
+.flag.v {
+  transform: skew(10deg, -5deg);
+  background-color: #ffa509;
+  top: 92%;
+  right: 18%;
+  color: #496188;
+  animation: rotate-v 5s cubic-bezier(.16,.14,.82,.73) infinite;
+}
+
+.pin-left {
+  position: absolute;
+  bottom: 7%;
+  left: 2%;
+  transform: rotate(-22deg);
+}
+
+.pin-left img {
+  max-width: 30px;
+}
+
+.pin-right {
+  position: absolute;
+  bottom: 7%;
+  right: 2%;
+  transform: rotate(-65deg);
+}
+
+.pin-right img {
+  max-width: 30px;
+}
+
+.ham {
+    margin-left: 10px;
+    font-size: 2.5rem;
+    position: fixed;
+    right: 5%;
+    top: 2%;
+    cursor: pointer;
+    mix-blend-mode: difference;
+}
+
+.sidenav {
+  height: 100vh;
+  width: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: #000;
+  padding-top: 70px;
+  transition: all 0.4s;
+  opacity: 0.5;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  display: block;
+  padding: 25px 0px 25px 30px;
+  margin-left: 20px;
+  opacity: 1;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 40px !important;
+  padding-bottom: 30px !important;
+}
+
+.sidenav-visible {
+  width: 200px;
+}
