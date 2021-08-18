@@ -50,7 +50,7 @@
 
 .curve-visible {
   opacity: 1;
-  transition: opacity 6s;
+  transition: opacity 3s;
 }
 
 .intro, .intro-2 {
